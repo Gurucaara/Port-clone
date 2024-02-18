@@ -1,6 +1,8 @@
 import React from "react";
 import notesTaking from "../assets/portfolio/notes.png";
 import toDoList from "../assets/portfolio/toDoList.png";
+import jsonStore from "../assets/portfolio/jsonStore.png";
+
 
 const PortfolioTwo = () => {
   const portfolios = [
@@ -15,6 +17,12 @@ const PortfolioTwo = () => {
       src: notesTaking,
       demo: "https://notes-taking-two.vercel.app/",
       code: "https://github.com/Gurucaara/Notes-taking",
+    },
+    {
+      id: 3,
+      src: jsonStore,
+      demo: "https://json-store.vercel.app",
+      code: "https://github.com/Gurucaara/JSON-Store",
     },
   ];
 

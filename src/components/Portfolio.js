@@ -1,43 +1,48 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import board from "../assets/portfolio/board.png";
+import foodHav from "../assets/portfolio/foodHav.png";
+import netGPT from "../assets/portfolio/netGPT.png";
+import yt from "../assets/portfolio/yt.png";
 import authVer from "../assets/portfolio/authVer.png";
 import blog from "../assets/portfolio/blog.png";
-import jsonStore from "../assets/portfolio/jsonStore.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: board,
+      demo: "https://miro-board.vercel.app",
+      code: "https://github.com/Gurucaara/Miro-Board",
     },
     {
       id: 2,
-      src: reactParallax,
-    },
-    {
-      id: 3,
-      src: navbar,
-    },
-    {
-      id: 4,
-      src: blog,
-      demo: "https://puru-blogs.vercel.app",
-      code: "https://github.com/Gurucaara/puru-blogs",
-      title: "Test title",
-    },
-    {
-      id: 5,
       src: authVer,
       demo: "https://next-authentication-plum.vercel.app",
       code: "https://github.com/Gurucaara/next-authentication",
     },
     {
+      id: 3,
+      src: blog,
+      demo: "https://puru-blogs.vercel.app",
+      code: "https://github.com/Gurucaara/puru-blogs",
+    },
+    {
+      id: 4,
+      src: foodHav,
+      demo: "https://foodhaven-theta.vercel.app",
+      code: "https://github.com/Gurucaara/Foodhaven",
+    },
+    {
+      id: 5,
+      src: netGPT,
+      demo: "https://netlix-clone-nu.vercel.app",
+      code: "https://github.com/Gurucaara/Netlix-clone",
+    },
+    {
       id: 6,
-      src: jsonStore,
-      demo: "https://json-store.vercel.app",
-      code: "https://github.com/Gurucaara/JSON-Store",
+      src: yt,
+      demo: "https://yt-clone-gurucaara.vercel.app",
+      code: "https://github.com/Gurucaara/yt-clone",
     },
   ];
 
@@ -51,7 +56,7 @@ const Portfolio = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="py-6">Check Out some of my work right here.</p>
+          <p className="py-4">Check Out some of my work right here.</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, demo, code }) => (
