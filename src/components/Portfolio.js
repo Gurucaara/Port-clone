@@ -11,36 +11,42 @@ const Portfolio = () => {
     {
       id: 1,
       src: board,
+      alt: "Miro Board",
       demo: "https://miro-board.vercel.app",
       code: "https://github.com/Gurucaara/Miro-Board",
     },
     {
       id: 2,
       src: authVer,
+      alt: "Next Auth",
       demo: "https://next-authentication-plum.vercel.app",
       code: "https://github.com/Gurucaara/next-authentication",
     },
     {
       id: 3,
       src: blog,
+      alt: "Blog CMS",
       demo: "https://puru-blogs.vercel.app",
       code: "https://github.com/Gurucaara/puru-blogs",
     },
     {
       id: 4,
       src: foodHav,
+      alt: "Food Haven",
       demo: "https://foodhaven-theta.vercel.app",
       code: "https://github.com/Gurucaara/Foodhaven",
     },
     {
       id: 5,
       src: netGPT,
+      alt: "Netflix GPT",
       demo: "https://netlix-clone-nu.vercel.app",
       code: "https://github.com/Gurucaara/Netlix-clone",
     },
     {
       id: 6,
       src: yt,
+      alt: "Youtube Clone",
       demo: "https://yt-clone-gurucaara.vercel.app",
       code: "https://github.com/Gurucaara/yt-clone",
     },
@@ -59,11 +65,11 @@ const Portfolio = () => {
           <p className="py-4">Check Out some of my work right here.</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demo, code }) => (
+          {portfolios.map(({ id, src, demo, code, alt }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
-                alt=""
+                alt={alt}
                 className="rounded-md duration-200 hover:scale-105 "
               />
               <div className="flex items-center justify-center">
